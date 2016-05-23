@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">  <!--bootstrap for styling-->
+</head>
+<body class="container"> <!-- content -->
+    <h1>jQuery Practice</h1>
+    
+    <p>Click the face to interact with it!</p>
+    
+    <img id="face" src="img/happy.png">
+    
+        
+    <!-- A container to hold a visualization -->
+    <div id="vis-container" style="margin-top:0.5em;">
+        <p>IGNORE THE BELOW TO START</p>
+
+        <!-- a "frame" to put shapes in -->
+        <svg width=400 height=400 style="border:1px solid gray"> 
+
+        </svg>
+
+    </div>
+
+    <button id="buttonA">Change A</button>
+    <button id="buttonB">Change B</button>
+    <button id="buttonC">Change C</button>
+    <button id="buttonD">Change D</button>
+     
+    <!--jQuery-->
+    <script src="lib/jquery-2.2.3.js"></script>
+    <!--d3-->
+    <script src="lib/d3.js"></script>
+    <!--our script-->
+    <script src="script.js"></script>
+</body>
+</html>
