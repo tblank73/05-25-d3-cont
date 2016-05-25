@@ -6,28 +6,24 @@
     <link rel="stylesheet" href="lib/bootstrap.min.css">  <!--bootstrap for styling-->
 </head>
 <body class="container"> <!-- content -->
-    <h1>jQuery Practice</h1>
+    <h1>D3 Demo</h1>
     
-    <p>Click the face to interact with it!</p>
-    
-    <img id="face" src="img/happy.png">
-    
+    <!-- a "frame" to put shapes in -->
+    <svg width=400 height=400 style="border:1px solid gray"> 
         
-    <!-- A container to hold a visualization -->
-    <div id="vis-container" style="margin-top:0.5em;">
-        <p>IGNORE THE BELOW TO START</p>
+        <rect></rect>
+        <rect></rect>
+        <rect></rect>
+        
+    </svg>
 
-        <!-- a "frame" to put shapes in -->
-        <svg width=400 height=400 style="border:1px solid gray"> 
-
-        </svg>
-
+    <div> <!-- a container for the buttons -->
+        <button id="addButton">Add</button>
+        <button id="moreButton">More Sleep</button>
+        <button id="lessButton">Less Sleep</button>
+        <button id="remButton">Remove</button>
+        <button id="resetButton">Reset</button>
     </div>
-
-    <button id="buttonA">Change A</button>
-    <button id="buttonB">Change B</button>
-    <button id="buttonC">Change C</button>
-    <button id="buttonD">Change D</button>
      
     <!--jQuery-->
     <script src="lib/jquery-2.2.3.js"></script>
